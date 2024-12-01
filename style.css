@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+body {
+    font-family: "Permanente Marker", cursive;
+    line-height: 1.6;
+    color: #00040c;
+    background-color: #f4f4f4;  
+}
+
+header {
+    background-color: #00040c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding-left: 25px;
+}
+
+.input-buscar input{
+    font-family: "Permanente Marker", cursive;
+    font-size: 15px;
+    background-color: #00040c;
+    border:none;
+    width: 160px;
+    color: white;
+    outline: none;
+    margin-left: 8px;
+    margin-bottom: 5px;
+}
+.lupa-buscar{
+    margin-right: 8px;
+}
+
+.buscar-box{
+    border-radius: 50px;
+    border: 1px solid white;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: auto;
+    align-items: center;
+    align-content: center;
+    padding: 5px;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+#logo-art {
+    
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    border-radius: 10px;
+}
+
+nav ul {
+    padding: 20px;
+    list-style: none;
+    display: flex;
+}
+
+nav ul i{
+    margin-left: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    margin-top: 10px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+#carrosel img {
+    width: 10px;
+}
+
+.carousel-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; 
+    background-color: #f4f4f4;    /* Centraliza verticalmente */
+}
+
+.carousel-container div {
+    text-align: center;      /* Centraliza o conteúdo dentro de cada div */
+}
+
+.carousel-container img {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;         /* Centraliza a imagem dentro do div */
+}
+
+
+.slick-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slick-dots li button:before {
+    color: #0c2441;
+    font-size: 12px;
+}
+
+.icon-car{
+    width: 30px;
+}
+
+/* Estilos da Seção de Produtos */
+#produtos {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    
+}
+
+#produtos h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.produto {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+}
+
+.produto h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.produto p {
+    margin-top: 5px;
+    color: #0c2441;
+    font-weight: bold;
+}
+
+.produto button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #00040c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.produto button:hover {
+    background-color: #0c2441;
+}
+
+footer {
+    background-color: #00040c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos do Produto */
+#detalhes-produto {
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.produto-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.produto-imagem img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.produto-detalhes {
+    max-width: 600px;
+    margin-left: 30px;
+}
+
+.produto-detalhes h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.produto-detalhes .desconto {
+    font-size: 20px;
+    color: #be0202;
+}
+
+.produto-detalhes .preco {
+    font-size: 40px;
+    color: #0c2441;
+    margin-bottom: 20px;
+}
+
+.produto-detalhes .descricao {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.produto-detalhes button {
+    padding: 15px 30px;
+    background-color: #00040c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.produto-detalhes button:hover {
+    background-color: #0c2441;
+}
+
+/*==========*/
+#openModal {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button {
+    margin: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    background-color: #00040c;
+    box-shadow: -2px 0 5px #f4f4f4(0,0,0,0.5);
+    z-index: 1000;
+    color: white;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.close {
+    color: #f4f4f4;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #be0202;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+#checkout{
+    font-family: "Permanent Marker", cursive;
+    font-size: 18px;
+    color: white;
+    background-color: #0c2441;
+    border-radius: 10px;
+    box-shadow: 1px 0 5px #f4f4f4(0,0,0,0.5);
+    width: 200px;
+}
+
+.modal .modal-content button{
+    font-family: "Permanent Marker", cursive;
+    color: white;
+    background-color: #0c2441;
+    border-radius: 10px;
+    box-shadow: 1px 0 5px #f4f4f4(0,0,0,0.5);
+    width: 40px;
+    border: 0;
+}
+
+.modal .modal-content li{
+    margin: 20px;
+    list-style: none;
+}
+/*=============*/
+
+#login-cadastro {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form-box {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    border-radius: 10px;
+}
+
+.form-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box label {
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.form-box input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-box button {
+    padding: 10px;
+    background-color: #00040c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-box button:hover {
+    background-color: #0c2441;
+}
+
+/*===============================================*/
+
+#perfil {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.perfil-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.perfil-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.perfil-detalhes p, .perfil-detalhes ul {
+    font-size: 1rem;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.perfil-detalhes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.perfil-detalhes ul li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.botao-editar {
+    padding: 10px 20px;
+    background-color: #00040c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-editar:hover {
+    background-color: #0c2441;
+}
+
+
+.secoes-footer {
+    display: flex;
+    justify-content: center;
+    gap: 200px
+}
+
+#lista-dep {
+    text-decoration: none;
+    list-style: none;
+    align-items: end;
+    text-align: left;
+}
+
+#lista-dep a {
+   color: white;
+}
+
+.secao-cartoes{
+    margin-top: 40px;
+}
+
+#cartoes li {
+    display: inline;
+}
+
+#cartoes li img {
+    height: 50px;  
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#icons-redes i{
+    padding: 12px;
+    font-size: 23px;
+}
+
+#icons-redes i{
+    padding: 12px;
+    font-size: 23px;
+}
+
+#contato i {
+    font-size: 23px;
+}
